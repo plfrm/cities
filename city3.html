@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="california.css" rel="stylesheet">
+    <title>San Diego</title>
+    <link rel="shortcut icon" href="images/City3/san-diego.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--web page header-->
+        <header class="my-header">
+            <h1 class="my-title">The City of San Diego</h1>
+            <!--web header logo-->
+            <div class="img-header">
+                <img src="images/City3/header.jpg" alt="">
+            </div>
+        </header>
+        <!--navigation bar-->        
+        <div class="mynav">
+            <!--Navigation bar that will appear when the web page is less than 900px-->
+            <div id="mySidebar" class="sidebar">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="index.html">Home</a>
+                <a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a>
+                <a href="city1.html" >City of San Francisco</a>
+                <a href="city2.html" >City of Los Angeles</a>
+                <a href="city3.html" >City of San Diego</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="finav">
+                <span class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </div>
+            <!--navigation bar--> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li class="arrow popup" onclick="getPopup()"><a href="#" class="more">Cities</a>
+                        <!--dropdown-->
+                        <ul id="this_popup" class="popuplist">
+                            <li><a href="city1.html">San Francisco</a></li>
+                            <li><a href="city2.html">Los Angeles</a></li>
+                            <li><a href="city3.html">San Diego</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <!--pictures of famous places of San Diego-->  
+        <aside class="my-aside">
+            <h1>Famous Landmarks</h1>
+            <ul>
+                <li><a href="#"><img src="images/City3/coronado-island.jpg" alt="Coronado Island" width="200" height="200" title="Coronado Island"></a></li>
+                <li><a href="#"><img src="images/City3/Torrey-pines.jpg" alt="Torrey Pines" width="200" height="200" title="Torrey Pines"></a></li>
+                <li><a href="#"><img src="images/City3/Gaslamp.jpg" alt="Gaslamp Quarter" width="200" height="200" title="Gaslamp Quarter"></a></li>
+                <li><a href="#"><img src="images/City3/Seaworld.jpg" alt="SeaWorld San Diego" width="200" height="200" title="SeaWorld San Diego"></a></li>
+                <li><a href="#"><img src="images/City3/Old-Town.jpg" alt="Old Town San Diego State Historic Park width="200" height="200" title="Old Town San Diego State Historic Park"></a></li>
+            </ul>    
+        </aside>
+        <!--Information about San Diego--> 
+        <section class="my-section">
+            <div class="welcome">
+                <h1>Welcome to San Diego</h1>
+            </div>            
+            <div class="about-right">
+                <h2>About San Diego</h2>
+                <p>San Diego is a vibrant and diverse city located on the southern coast of California, known for its beautiful weather, stunning beaches, and rich cultural and historical heritage.</p>
+                <p>San Diego boasts some of the most beautiful beaches in California, including Coronado Beach, La Jolla Cove, Pacific Beach, and Ocean Beach. Whether you're into surfing, swimming, sunbathing, or simply walking along the shore, the city offers endless outdoor opportunities.</p>
+                <p>San Diego has a thriving food scene, with a mix of fresh seafood, Mexican cuisine, and farm-to-table options. Given its proximity to Mexico, Mexican food (particularly fish tacos) is a signature part of the city's culinary offerings.</p>
+                <h2>Geography and Climate</h2>
+                <p>San Diego is located on the Pacific Ocean, just north of the Mexico border. Its proximity to the international border gives it a unique cultural blend of American and Mexican influences.</p>
+                <p>San Diego is renowned for its mild, Mediterranean climate with an average year-round temperature of around 70°F (21°C). The weather is generally sunny and pleasant, with temperatures rarely dipping below 50°F (10°C) in the winter or rising above 85°F (29°C) in the summer.</p>
+                <h2>Education and Innovation</h2>
+                <p>San Diego is home to several top universities and research institutions, including University of California, San Diego (UCSD), San Diego State University (SDSU), and Point Loma Nazarene University.</p>
+                <p>The city has developed into a tech and innovation hub, especially in fields like biotechnology, healthcare, and software development. The UCSD campus and nearby Torrey Pines are central to the city's growing reputation as a center for scientific research.</p>
+                <h2>Economy</h2>
+                <p>San Diego has a diverse economy, with key industries including defense and military, biotechnology, telecommunications, and tourism.</p>
+                <p>Tourism is also a vital part of the economy, with attractions like the San Diego Zoo, SeaWorld, LEGOLAND California, and the city's beautiful coastline drawing millions of visitors each year.</p>   
+            </div>
+            <div class="about-left">
+                <div class="my-section-img">
+                    <img src="images/City3/san-diego.jpg" alt="San Francisco City">
+                </div> 
+                <!--Famous places of San Diego-->               
+                <h2>Famous Landmarks</h2>
+                <p><b>Coronado Island : </b>A picturesque island with beautiful beaches, the iconic Hotel del Coronado, and great dining options.</p>
+                <p><b>Torrey Pines State Natural Reserve : </b>is a stunning coastal area located in San Diego, California, known for its unique landscape, scenic views, and natural beauty. It encompasses both Torrey Pines State Natural Reserve and the Torrey Pines Golf Course.</p>
+                <p><b>Gaslamp Quarter : </b>A lively downtown neighborhood filled with restaurants, nightlife, and historic buildings.</p>
+                <p><b>SeaWorld San Diego : </b>A marine life theme park featuring animal exhibits, shows, and thrilling rides.</p>
+                <p><b>Old Town San Diego State Historic Park  : </b>A preserved area that showcases San Diego's early history, with museums, shops, and restaurants.</p>
+                <br><br>
+                <!--information table-->
+                <table class="my-table">
+                    <tr>
+                        <th></th>
+                        <th>1980</th>
+                        <th>2000</th>
+                        <th>2020</th>
+                      </tr>
+                    <tr>
+                      <td>Average Income</td>
+                      <td>The average annual income was approximately $29,000 for households.</td>
+                      <td>The average annual income was approximately $55,000 for households.</td>
+                      <td>The average annual income was approximately $79,000 for households.</td>
+                    </tr>
+                    <tr>
+                      <td>Population</td>
+                      <td>The population of San Francisco was approximately 1.1 million people</td>
+                      <td>The population of San Francisco was approximately 1.3 million people</td>
+                      <td>The population of San Francisco was approximately 1.4 million people</td>
+                    </tr>
+                    <tr>
+                      <td>Cost of living</td>
+                      <td><p>The median home price was about $150,000</p>
+                          <p>The average rent for an apartment was around $450 to $550 per month</p>
+                    </td>
+                      <td><p>The median home price was around $250,000 to $280,000</p>
+                          <p>The average rent for an apartment was around $800 to $1,200 per month</p>
+                    </td>
+                      <td><p>The median home price was about $660,000</p>
+                        <p>The average rent for an apartment was around $1,800 to $2,500 per month</p>
+                      </td>
+                    </tr>
+                    </table>
+            </div>
+        </section>
+        <!--web page footer-->
+        <footer class="my-footer">
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--web footer logo-->
+            <div class="img-footer">
+                <img src="images/Footer/ca-footer.png" alt="The Bear Flag is the official flag of the U.S. state of California.">
+            </div>
+        </footer>
+    </div>
+    <script src="california.js"></script> 
+    </script>
+    </body>
+</html>

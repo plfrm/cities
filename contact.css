@@ -1,0 +1,108 @@
+body{margin: 0; background-color: #000000e8;}
+.container{width: 100%; margin: 0 auto; display: grid; grid-gap: 2px; grid-template-columns: repeat(4,fr); grid-template-rows: repeat(4,auto);
+grid-template-areas:
+"header header header header"
+"mynav mynav mynav mynav"
+"aside section section section"
+"footer footer footer footer";
+}
+/*header tag configuration*/
+.my-header{ grid-area: header; background-color: aliceblue; padding: 10px; display: grid; grid-gap: 0; grid-template-columns: repeat(6,fr); grid-template-rows: repeat(1,auto);
+grid-template-areas:
+"title title title title title image"; border-radius: 8px;}
+.my-header:hover{background-color: #fff;}
+.my-title{grid-area: title; text-align:center; font-family: "Playfair Display", serif; font-weight: 600; margin-left: 300px; color: rgb(58, 57, 57);}
+.my-title:hover{color: #000; font-weight: 700;}
+/*logo style in header tag*/
+.img-header{ grid-area: image; padding: 0; display: inline;  text-align: end; margin-right: 10px; }
+.img-header img{border-radius: 50px; width: 150px; height: 100px; }
+/*nav tag configuration*/
+.mynav{ grid-area: mynav; background-color: #000000e8; color: #fefefe; text-align: center; padding: 10px 0; word-spacing: 60px;}
+.mynav li{ display: inline; font-size: 1.5em; list-style-type: none; }  
+.mynav li a{ text-decoration: none; color: rgba(218, 213, 213, 0.904); font-family: "Libre Franklin", sans-serif;}
+.mynav li a:hover{ color: #fff; font-weight: 500;}
+/*dropdown menu style in navigation bar*/
+.more::after{ content:' \25Be'; word-spacing: 4px; color: #fefefe;}
+.arrow:hover .more::after{ content:' \25B4';}
+.popup { position: relative;}
+.popup .popuplist { visibility: hidden;  background-color:#000000e8; border-radius: 6px; text-align: center; word-spacing: normal; padding: 10px 15px; position: absolute; z-index: 1; top: 135%; left: 20%; 
+margin-left: -80px;  border: .1px solid rgba(138, 135, 135, 0.525);}
+.popuplist li{ list-style-type: none; font-size:large; display: block; line-height: 1.8;}
+.popuplist li a{ color: rgba(218, 213, 213, 0.904); text-decoration: none; font-family: "Libre Franklin", sans-serif;}
+/* top tip of popup*/
+.popup .popuplist::after { content: ""; position: absolute; bottom: 100%; left: 50%; margin-left: -5px;  border-width: 7px; border-style: solid; 
+     border-color: transparent transparent  #111 transparent; }
+.popup .show { visibility: visible;}
+/* Sidebar configuration*/
+#finav { padding: 3px; text-align: start; transition: margin-left .5s; }
+.openbtn { font-size: 2em; cursor:pointer; background-color: #000000e8; color: rgba(218, 213, 213, 0.904); padding: 1px; border: none; margin-left: 6%; }
+.openbtn:hover{color:#fff;}
+.sidebar { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #000000e8; overflow-x: hidden; transition: 0.5s; padding-top: 60px; }
+.sidebar a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: rgba(218, 213, 213, 0.904); display: block; transition: 0.2s; font-family: "Libre Franklin", sans-serif;}
+.sidebar a:hover {color: #fff; font-weight: 500; }
+.sidebar .closebtn { position: absolute; top: 0; right: 25px; margin-left: 50px; }
+.openbtn{ display: none;}
+/*aside tag style where information about social networks is located*/
+.my-aside{background-color: aliceblue; grid-area: aside; text-align: center; padding: 10px; border-radius: 8px;}
+.my-aside:hover{background-color: #fff; }
+.my-aside h1{font-family: "Libre Franklin", sans-serif; color: rgb(58, 57, 57); margin-top: 100px;}
+.my-aside h1:hover{ color: #000; font-weight: 800;}
+.my-aside ol{  list-style-type: none; padding: 0; margin-top: 50px;}
+.my-aside li{margin: 30px; width: 200px;}
+.my-aside li a{ text-decoration: none;  padding: 0; font-size: 4em;}
+#fb{color: #1877f2;}
+#tw{color: #1da1f2;}
+#ig{color: #fd1d1d;}
+/*Section tag style where the user can contact by entering their data*/
+section{grid-area: section; border-radius: 8px; background-color: aliceblue; font-family: "Libre Franklin", sans-serif; padding: 20px;}
+.my-form{padding: 3em; text-align: left; background-color: #cbcad311; width: 50%; margin-left: 20%; margin-top: 15px; border-radius: 10px;}
+.my-form h2{text-align: center;}
+.my-form:hover{background-color: aliceblue;}
+input[type=text], input[type=email], input[type=tel], select { width: 100%; padding: 12px 20px; margin: 20px 0; display: inline-block; border: 1px solid #ccc; border-radius: 10px; box-sizing: border-box;}
+input[type=submit] { width: 50%; background-color: #000000e8; color: white; padding: 14px 20px; margin: 20px 0; margin-left: 25%; border: none; border-radius: 10px; cursor: pointer; }
+input[type=submit]:hover { background-color: #212122c2; }
+/*footer tag style*/
+.my-footer{grid-area: footer; background-color: #000000e8; text-align: center; padding: 10px 0; width: 100%; border-radius: 8px; display: grid; grid-gap: 0; grid-template-columns: repeat(6,fr); grid-template-rows: repeat(1,auto);
+    grid-template-areas:
+    "memus menus menus menus menus images";}
+.menu-footer{grid-area: menus; font-family: "Playfair Display", serif; font-weight: 600; margin-left: 150px; color: rgb(58, 57, 57);}
+/*logo style in footer tag*/
+.img-footer{grid-area: images; padding: 0; display: inline;  text-align: end; margin-right: 10px; }
+.img-footer img{border-radius: 50px; width: 200px; height: 100px; }
+.my-footer:hover{background-color: #212122c2;}
+.my-footer li{ display: inline; font-size: x-large; padding: 1.7em; }
+.my-footer li a{ text-decoration: none; color: rgba(218, 213, 213, 0.904); font-family: "Libre Franklin", sans-serif;}
+.my-footer li a:hover{ color: #fff; font-weight: 500;}
+/*responsive style*/
+@media only screen and (max-width: 900px) {
+    .container{grid-template-columns: repeat(4,fr); grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "header header header header"
+        "mynav mynav mynav mynav"
+        "section section section section"
+        "aside aside aside aside"
+        "footer footer footer footer";
+        }
+    .my-title{margin-left: 80px;}
+    .menu-footer{margin: 0; text-align: right;}
+    .my-footer li{ padding: 1em; }
+    .my-nav li{padding: 2em; }
+    .my-nav{text-align: right;}
+    .my-aside h1{margin-top: 10px;}
+    .my-aside li{display: inline;}
+    .my-form{width: 70%; margin-left: 10%;}   
+}
+@media only screen and (max-width: 750px) {
+    .mynav{word-spacing: normal; text-align: start;}
+    .mynav nav{ display: none;}
+    .openbtn{display: block;}
+}
+@media only screen and (max-width: 630px) {
+    .my-title{margin-left: 0;} 
+    .img-header img{width: 100px; height: 100px; }
+    .my-form{width: 80%; margin-left: 2%;}
+    .img-footer{display: none;}    
+    .menu-footer{margin: 0; text-align: left;}}
+@media only screen and (max-width: 420px){
+    .my-footer li{display: block; text-align: center; margin: 0; padding: 5px;}
+}

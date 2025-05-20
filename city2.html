@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="california.css" rel="stylesheet">
+    <title>Los Angeles</title>
+    <link rel="shortcut icon" href="images/City2/LA-title.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--web page header-->
+        <header class="my-header">
+            <h1 class="my-title">The City of Los Angeles</h1>
+            <div class="img-header">
+                <img src="images/City2/LA-title.png" alt="">
+            </div>
+        </header>    
+        <!--navigation bar-->    
+        <div class="mynav">
+            <!--Navigation bar that will appear when the web page is less than 900px-->
+            <div id="mySidebar" class="sidebar">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="index.html">Home</a>
+                <a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a>
+                <a href="city1.html" >City of San Francisco</a>
+                <a href="city2.html" >City of Los Angeles</a>
+                <a href="city3.html" >City of San Diego</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="finav">
+                <span class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </div>
+            <!--navigation bar--> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li class="arrow popup" onclick="getPopup()"><a href="#" class="more">Cities</a>
+                        <!--dropdown-->
+                        <ul id="this_popup" class="popuplist">
+                            <li><a href="city1.html">San Francisco</a></li>
+                            <li><a href="city2.html">Los Angeles</a></li>
+                            <li><a href="city3.html">San Diego</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <!--pictures of famous places in Los Angeles--> 
+        <aside class="my-aside">
+            <h1>Famous Landmarks</h1>
+            <ul>
+                <li><a href="#"><img src="images/City2/walk of fame.jpeg" alt="Hollywood Walk of Fame" width="200" height="200" title="Hollywood Walk of Fame"></a></li>
+                <li><a href="#"><img src="images/City2/Hollywood.jpeg" alt="Hollywood Sign" width="200" height="200" title="Hollywood Sign"></a></li>
+                <li><a href="#"><img src="images/City2/the-grove.jpg" alt="The Grove" width="200" height="200" title="The Grove"></a></li>
+                <li><a href="#"><img src="images/City2/Santa-Monica-Pier.jpg" alt="Santa Monica Pier" width="200" height="200" title="Santa Monica Pier"></a></li>
+                <li><a href="#"><img src="images/City2/Universa-studios.jpg" alt="Universal Studios" width="200" height="200" title="Universal Studios"></a></li>
+            </ul>    
+        </aside>
+        <!--Information about Los Angeles-->
+        <section class="my-section">
+            <div class="welcome">
+                <h1>Welcome to Los Angeles</h1>
+            </div>             
+            <div class="about-left">
+                <h2>About Los Angeles</h2>
+                <p>Los Angeles is a large city in Southern California, known for its vibrant culture, diverse population, and global influence in entertainment, business, technology, and fashion.</p>
+                <p>Los Angeles is one of the most ethnically diverse cities in the United States. It has large communities of Latinx, African American, Asian, and European descent, among others.</p>
+                <p>LA is considered the entertainment capital of the world, mainly because of Hollywood, which hosts the movie industry, TV studios, and iconic landmarks like the Hollywood Walk of Fame and the Hollywood Sign.</p>
+                <p>LA is a top global tourist destination with attractions like Venice Beach, Santa Monica Pier, Griffith Observatory, Rodeo Drive, and the Getty Center.</p>
+                <p>The city is also known for its theme parks, including Disneyland and Universal Studios Hollywood.</p>
+                <h2>Climate</h2>
+                <p>Los Angeles has a Mediterranean climate with mild, wet winters and hot, dry summers. The city's proximity to the Pacific Ocean helps moderate temperatures, making it famous for its sunny weather year-round.</p>
+                <h2>Education and Innovation</h2>
+                <p>LA is home to major universities like the University of Southern California (USC) and University of California, Los Angeles (UCLA), both of which are highly regarded for their academic programs and research in various fields.</p>
+                <p>The city is also a hub for innovation and startups, particularly in the tech, entertainment, and healthcare industries.</p>
+                <h2>Economy</h2>
+                <p>The economy of Los Angeles is diverse, with key sectors including entertainment, tech, manufacturing, and tourism.</p>  
+                <p>It's a major hub for the film, television, and music industries, and increasingly, tech companies are setting up shop in the region, particularly in areas like Santa Monica and Silicon Beach.</p>
+                <p>The Port of Los Angeles is one of the busiest cargo ports in the world, making trade and shipping critical to the city's economy.</p>  
+            </div>
+            <!--Famous places of Los Angeles--> 
+            <div class="about-right">
+                <div class="my-section-img">
+                    <img src="images/City2/LA.jpg" alt="Los Angeles City">
+                </div>                
+                <h2>Famous Landmarks</h2>
+                <p><b>Hollywood Walk of Fame : </b>The Hollywood Walk of Fame is a famous sidewalk along Hollywood Boulevard that honors over 2,600 celebrities. It's a must-see for those interested in the entertainment industry.</p>
+                <p><b>The Hollywood Sign: </b>The iconic Hollywood Sign is one of the most recognizable landmarks in the world. Visitors can hike to the sign or view it from various spots in the city.</p>
+                <p><b>The Grove : </b>A popular outdoor shopping and entertainment complex, The Grove features upscale shops, restaurants, and the historic Farmers Market.</p>
+                <p><b>Santa Monica Pier : </b>The iconic Santa Monica Pier has a Ferris wheel, aquarium, and family-friendly attractions. The surrounding beach is perfect for sunbathing and surfing.</p>
+                <p><b>Universal Studios Hollywood : </b>A combination of a theme park and a working movie studio, Universal Studios is home to thrilling rides and shows based on popular movies and TV shows.</p>
+                <br><br>
+                <!--information table-->
+                <table class="my-table">
+                    <tr>
+                        <th></th>
+                        <th>1980</th>
+                        <th>2000</th>
+                        <th>2020</th>
+                      </tr>
+                    <tr>
+                      <td>Average Income</td>
+                      <td>The average annual income was approximately $22,000 for households.</td>
+                      <td>The average annual income was approximately $40,000 for households.</td>
+                      <td>The average annual income was approximately $72,000 for households.</td>
+                    </tr>
+                    <tr>
+                      <td>Population</td>
+                      <td>The population of San Francisco was approximately 2.97 million people</td>
+                      <td>The population of San Francisco was approximately 3.7 million people</td>
+                      <td>The population of San Francisco was approximately 3.9 million people</td>
+                    </tr>
+                    <tr>
+                      <td>Cost of living</td>
+                      <td><p>The median home price was about $130,000</p>
+                          <p>The average rent for an apartment was around $400 to $500 per month</p>
+                          <p>Monthly utilities for an average apartment was around $100 to $150.</p>
+                    </td>
+                      <td><p>The median home price was around $250,000 to $275,000</p>
+                          <p>The average rent for an apartment was around $800 to $1,300 per month</p>
+                          <p>Monthly utilities for an average apartment was around $150 to $200.</p>
+                    </td>
+                      <td><p>The median home price was about $800,000</p>
+                        <p>The average rent for an apartment was around $2,200 to $2,500 per month</p>
+                        <p>Monthly utilities for an average apartment was around $150 to $200.</p>
+                      </td>
+                    </tr>
+                    </table>
+            </div>
+        </section>
+        <!--web page footer-->
+        <footer class="my-footer">
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--web footer logo-->
+            <div class="img-footer">
+                <img src="images/Footer/ca-footer.png" alt="The Bear Flag is the official flag of the U.S. state of California.">
+            </div>
+        </footer>
+    </div>
+    <script src="california.js"></script> 
+    </script>
+    </body>
+</html>

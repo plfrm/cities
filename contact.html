@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="images/ca-title.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--web page header-->
+        <header class="my-header">
+            <h1 class="my-title">The State of California</h1>
+            <!--web header logo-->
+            <div class="img-header">
+                <img src="images/Header/ca-flag-header.png" alt="The Bear Flag is the official flag of the U.S. state of California.">
+            </div>
+        </header> 
+        <!--navigation bar--> 
+        <div class="mynav">
+            <!--Navigation bar that will appear when the web page is less than 900px-->
+            <div id="mySidebar" class="sidebar">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="index.html">Home</a>
+                <a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a>
+                <a href="city1.html">City of San Francisco</a>
+                <a href="city2.html">City of Los Angeles</a>
+                <a href="city3.html">City of San Diego</a>
+                <a href="">Contact</a>
+            </div>
+            <div id="finav">
+                <span class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </div>
+            <!--navigation bar--> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li class="arrow popup" onclick="getPopup()"><a href="#" class="more">Cities</a>
+                        <!--dropdown-->
+                        <ul id="this_popup" class="popuplist">
+                            <li><a href="city1.html">San Francisco</a></li>
+                            <li><a href="city2.html">Los Angeles</a></li>
+                            <li><a href="city3.html">San Diego</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <!--social media side-->
+        <aside class="my-aside">
+            <h1>Follow Us</h1>
+            <ol>
+                <li><a href="#"><i class="fa fa-facebook" id="fb"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" id="tw"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" id="ig"></i></a></li>
+            </ol>    
+        </aside>
+        <!--contact form-->
+        <section>
+            <div class="my-form">
+            <h2>Contact</h2>
+            <form id="myform" action="" method="post">
+                <label for="fname">Your First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Your name..">            
+                <label for="lname">Your Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  required>
+                <label for="pn">Your Phone Number</label>
+                <input type="tel" id="pn" name="pn" placeholder="123-4508" pattern="[0-9]{3}-[0-9]{4}" required>            
+                <label for="county">Select Your County</label>
+                <select id="county" name="county">
+                  <option value="">Select One</option>
+                  <option value="1">Alameda County</option>
+                  <option value="2">Alpine County</option>
+                  <option value="3">Contra Costa County</option>
+                  <option value="4">Fresno County</option>
+                  <option value="5">Los Angeles County</option>
+                  <option value="6">Marin County</option>
+                  <option value="7">Monterey County</option>
+                  <option value="8">Napa County</option>
+                </select>             
+                <input type="submit" value="Submit">
+              </form> 
+            </div>           
+        </section>
+        <!--web page footer-->
+        <footer class="my-footer">
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--web footer logo-->
+            <div class="img-footer">
+                <img src="images/Footer/ca-footer.png" alt="The Bear Flag is the official flag of the U.S. state of California.">
+            </div>
+        </footer>
+    <script src="california.js"></script>
+    </div>
+    </body>
+</html>

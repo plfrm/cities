@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="california.css" rel="stylesheet">
+    <title>California</title>
+    <link rel="shortcut icon" href="images/ca-title.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--web page header-->
+        <header class="my-header">
+            <h1 class="my-title">The State of California</h1>
+            <div class="img-header">
+                <img src="images/Header/ca-flag-header.png" alt="The Bear Flag is the official flag of the U.S. state of California.">
+            </div>
+        </header>  
+        <!--navigation bar-->        
+        <div class="mynav">
+            <!--Navigation bar that will appear when the web page is less than 900px-->
+            <div id="mySidebar" class="sidebar">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="">Home</a>
+                <a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a>
+                <a href="city1.html">City of San Francisco</a>
+                <a href="city2.html">City of Los Angeles</a>
+                <a href="city3.html">City of San Diego</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="finav">
+                <span class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </div>
+            <!--navigation bar--> 
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li class="arrow popup" onclick="getPopup()"><a href="#" class="more">Cities</a>
+                        <ul id="this_popup" class="popuplist">
+                            <!--dropdown-->
+                            <li><a href="city1.html">San Francisco</a></li>
+                            <li><a href="city2.html">Los Angeles</a></li>
+                            <li><a href="city3.html">San Diego</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <!--3 popular cities in California--> 
+        <aside class="my-aside">
+            <h1> Popular Cities</h1>
+            <ul>
+                <li><a href="city1.html"><img src="images/Home/city1b.jpeg" width="200" height="200"></a></li>
+                <li><a href="city2.html"><img src="images/Home/city2a.jpeg" width="200" height="200"></a></li>
+                <li><a href="city3.html"><img src="images/Home/city3a.jpeg" width="200" height="200"></a></li>
+            </ul>    
+        </aside>
+        <!--Information about California--> 
+        <section class="my-section">
+            <div class="welcome">
+                <h1>Welcome to California</h1>
+            </div>            
+            <div class="about-left">
+                <h2>About California</h2>
+                <p>California is the most populous state in the United States and one of the most influential and diverse regions in the world. It is known for its unique geography, economy, culture, and political significance.</p>
+                <p>California is renowned for its cultural diversity. The state has long been a melting pot of ethnicities, languages, and traditions. This diversity is reflected in everything from food and art to festivals and languages spoken. Major ethnic groups in California include Latino, Asian American, African American, and Caucasian populations. Spanish, English, Chinese, Tagalog, and other languages are widely spoken.</p>
+                <h2>Geography and Climate</h2>
+                <p>California is located on the west coast of the U.S., bordered by Oregon to the north, Nevada to the east, Arizona to the southeast, and the Pacific Ocean to the west. It features a stunning variety of landscapes, including:</p>
+                <p>Coastline: California boasts a beautiful coastline with iconic beaches, cliffs, and coastal cities like Los Angeles, San Francisco, and San Diego.</p>
+                <p>Mountains: The Sierra Nevada mountain range runs along the eastern edge, with Mount Whitney, the highest point in the contiguous U.S.</p>
+                <p>Deserts: The state includes parts of the Mojave Desert and the Colorado Desert.</p>
+                <p>Valleys: The Central Valley, an agriculturally rich region, is crucial to California's economy.</p>
+                <p>Forests: Northern California is home to large redwood and sequoia forests, including the famous Redwood National and State Parks.</p>
+                </div>
+            <div class="about-right">
+                <!--image of the California capitol-->
+                <div class="my-section-img">
+                    <img src="images/Home/capitol.jpg" alt="California Capitol State">
+                </div>
+                <h2>Economy</h2>
+                <p>California has the largest economy of any U.S. state and is a global economic powerhouse. Several key sectors drive its economy:</p>
+                <p>Technology: The heart of the tech industry, California is home to Silicon Valley, the world's leading tech hub, where companies like Apple, Google, and Facebook are headquartered.</p>
+                <p>Entertainment: Hollywood, located in Los Angeles, is the epicenter of the global entertainment industry, producing movies, television shows, and music.</p>
+                <p>Agriculture: The Central Valley is one of the most productive agricultural regions in the world, growing crops like almonds, grapes, lettuce, and strawberries. California is also a top producer of wine.</p>
+                <p>Tourism: Tourists flock to California for its national parks (like Yosemite and Sequoia), iconic landmarks (such as the Golden Gate Bridge), world-class theme parks (like Disneyland), and vibrant cities.</p>
+                <br><br>
+                <!--information table-->
+                <table class="my-table">
+                    <tr>
+                        <th></th>
+                        <th>1980</th>
+                        <th>2000</th>
+                        <th>2020</th>
+                      </tr>
+                    <tr>
+                      <td>Average Income</td>
+                      <td>The average annual income was approximately $23,855 for households.</td>
+                      <td>The average annual income was approximately $40,000 for households.</td>
+                      <td>The average annual income was approximately $80,000 for households.</td>
+                    </tr>
+                    <tr>
+                      <td>Population</td>
+                      <td>The population in 1980 was approximately 23.7 million people</td>
+                      <td>The population in 1980 was approximately 33.9 million people</td>
+                      <td>The population in 1980 was approximately 39.5 million people</td>
+                    </tr>
+                    <tr>
+                      <td>Cost of living</td>
+                      <td><p>The median home price was about $92,000</p>
+                          <p>The average rent for an apartment was around $400 to $500 per month</p>
+                          <p>The price of gasoline was around $1.19 per gallon</p>
+                    </td>
+                      <td><p>The median home price was about $230,000</p>
+                          <p>The average rent for an apartment was around $750 to $1000 per month</p>
+                          <p>The price of gasoline was around $1.60 per gallon</p>
+                    </td>
+                      <td><p>The median home price was about $700,000</p>
+                        <p>The average rent for an apartment was around $2500 to $3000 per month</p>
+                        <p>The price of gasoline was around $4.00 per gallon</p>
+                      </td>
+                    </tr>
+                    </table>
+            </div>
+        </section>
+        <!--web page footer-->
+        <footer class="my-footer">
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--web footer logo-->
+            <div class="img-footer">
+                <img src="images/Footer/ca-footer.png" alt="The Bear Flag is the official flag of the U.S. state of California.">
+            </div>
+        </footer>
+    <script src="california.js"></script>
+    </div>
+    </body>
+</html>

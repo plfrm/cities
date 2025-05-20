@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="california.css" rel="stylesheet">
+    <title>San Francisco</title>
+    <link rel="shortcut icon" href="images/City1/title-sfo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--web page header-->
+        <header class="my-header">
+            <h1 class="my-title">The City of San Francisco</h1>
+            <div class="img-header">
+                <img src="images/City1/title-sfo.png" alt="">
+            </div>
+        </header>        
+        <!--navigation bar-->      
+        <div class="mynav">
+            <!--Navigation bar that will appear when the web page is less than 900px-->
+            <div id="mySidebar" class="sidebar">
+                <a href="#" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <a href="index.html">Home</a>
+                <a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a>
+                <a href="city1.html" >City of San Francisco</a>
+                <a href="city2.html" >City of Los Angeles</a>
+                <a href="city3.html" >City of San Diego</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="finav">
+                <span class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </div>
+            <!--navigation bar--> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li class="arrow popup" onclick="getPopup()"><a href="#" class="more">Cities</a>
+                        <!--dropdown-->
+                        <ul id="this_popup" class="popuplist">
+                            <li><a href="city1.html">San Francisco</a></li>
+                            <li><a href="city2.html">Los Angeles</a></li>
+                            <li><a href="city3.html">San Diego</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul>
+            </nav>
+        </div>
+        <!--pictures of famous places in San Francisco--> 
+        <aside class="my-aside">
+            <h1>Famous Landmarks</h1>
+            <ul>
+                <li><a href="#"><img src="images/City1/golden-gate.jpg" alt="Golden Gate Bridge" width="200" height="200" title="Golden Gate Bridge"></a></li>
+                <li><a href="#"><img src="images/City1/pier 39.jpg" alt="Pier 39 - Fisherman's Wharf San Francisco" width="200" height="200" title="Fisherman's Wharf"></a></li>
+                <li><a href="#"><img src="images/City1/Painted-Ladies.jpg" alt="Painted Ladies San Francisco" width="200" height="200" title="The Painted Ladies"></a></li>
+                <li><a href="#"><img src="images/City1/Alcatraz-Island.jpg" alt="Alcatraz Island" width="200" height="200" title="Alcatraz Island"></a></li>
+                <li><a href="#"><img src="images/City1/Lombard Street.jpg" alt="Alcatraz Island" width="200" height="200" title="Lombard Street"></a></li>
+            </ul>    
+        </aside>
+        <section class="my-section">
+            <div class="welcome">
+                <h1>Welcome to San Francisco</h1>
+            </div>             
+            <!--Information about San Francisco-->          
+            <div class="about-right">
+                <h2>About San Francisco</h2>
+                <p>San Francisco is a melting pot of cultures, with a large Asian, Hispanic, and LGBTQ+ community. Neighborhoods like Chinatown, the Mission District, and the Castro offer unique experiences, from vibrant street art and cultural festivals to world-class food scenes.</p>
+                <p>San Francisco is surrounded by natural beauty, including the Pacific coastline, rolling hills, Muir Woods with redwoods, and parks like Golden Gate Park for recreation.</p>
+                <p>San Francisco is famous for its diverse food scene, influenced by its multicultural population. It's known for sourdough bread, seafood (especially clam chowder), and vibrant food trucks, restaurants, and farmers' markets.</p>
+                <p>San Francisco is a cultural hub with a rich arts scene, including museums, galleries, and theaters. It was a key center for counterculture in the 1960s and remains a focus for alternative art and music.</p>
+                <h2>Geography and Climate</h2>
+                <p>San Francisco has a mild Mediterranean climate with cool, foggy summers and mild winters. Its hills and proximity to the ocean create diverse microclimates, with varying weather across neighborhoods.</p>
+                <h2>Technology and Innovation</h2>
+                <p>San Francisco is located near Silicon Valley, the global center for tech innovation. The city has played a crucial role in the development of modern technology, with companies like Apple, Google, and Facebook having their roots in the region. It's also home to startups and venture capital firms that drive technological advancements.</p>
+                <h2>Economy</h2>
+                <p>San Francisco is a financial hub with a strong economy driven by technology, tourism, finance, and biotech. It is home to the San Francisco Stock Exchange and several large corporations, including tech giants like Salesforce and Twitter.</p>    
+            </div>
+            <!--Famous places of San Francisco--> 
+            <div class="about-left">
+                <div class="my-section-img">
+                    <img src="images/City1/san-francisco.jpeg" alt="San Francisco City">
+                </div>                
+                <h2>Famous Landmarks</h2>
+                <p><b>Golden Gate Bridge : </b>One of the most recognizable structures in the world, it spans the Golden Gate Strait, connecting San Francisco to Marin County. The bridge is famous for its Art Deco design and striking "International Orange" color.</p>
+                <p><b>Fisherman's Wharf : </b>Waterfront area known for seafood, shopping, and entertainment. It's also home to Pier 39, famous for its sea lions and family-friendly attractions.</p>
+                <p><b>The Painted Ladies : </b>Refers to a famous row of colorful Victorian houses located in the city, specifically on Steiner Street across from Alamo Square Park. These houses are iconic for their distinctive, vibrant colors and intricate architectural details, making them one of the most photographed landmarks in San Francisco.</p>
+                <p><b>Alcatraz Island : </b>Former federal prison located in San Francisco Bay, it housed some of the most notorious criminals in U.S. history. Today, it's a popular tourist destination with a fascinating history and scenic views.</p>
+                <p><b>Lombard Street : </b>Is one of the city's most famous streets, often referred to as the "crookedest street in the world." Located in the Russian Hill neighborhood, Lombard Street is renowned for its steep, one-block stretch that features eight sharp turns. This unique design and its picturesque setting have made it a popular tourist attraction and an iconic part of San Francisco.</p>
+                <br><br>
+                <!--information table-->
+                <table class="my-table">
+                    <tr>
+                        <th></th>
+                        <th>1980</th>
+                        <th>2000</th>
+                        <th>2020</th>
+                      </tr>
+                    <tr>
+                      <td>Average Income</td>
+                      <td>The average annual income was approximately $24,500 for households.</td>
+                      <td>The average annual income was approximately $60,000 for households.</td>
+                      <td>The average annual income was approximately $112,000 for households.</td>
+                    </tr>
+                    <tr>
+                      <td>Population</td>
+                      <td>The population of San Francisco was approximately 715,000</td>
+                      <td>The population of San Francisco was approximately 776,000</td>
+                      <td>The population of San Francisco was approximately 815,000</td>
+                    </tr>
+                    <tr>
+                      <td>Cost of living</td>
+                      <td><p>The median home price was about $150,000</p>
+                          <p>The average rent for an apartment was around $400 to $500 per month</p>
+                          <p>Monthly utilities for an average apartment was around $60 to $70.</p>
+                    </td>
+                      <td><p>The median home price was around $450,000 to $500,000</p>
+                          <p>The average rent for an apartment was around $1,200 to $1,500 per month</p>
+                          <p>Monthly utilities for an average apartment was around $100 to $150.</p>
+                    </td>
+                      <td><p>The median home price was about $1.4 million</p>
+                        <p>The average rent for an apartment was around $2,800 to $3,500 per month</p>
+                        <p>Monthly utilities for an average apartment was around $150 to $200.</p>
+                      </td>
+                    </tr>
+                    </table>
+            </div>
+        </section>
+        <!--web page footer-->
+        <footer class="my-footer">
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://maps.conservation.ca.gov/cgs/gmc/" target="_blank">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--web footer logo-->
+            <div class="img-footer">
+                <img src="images/Footer/ca-footer.png" alt="The Bear Flag is the official flag of the U.S. state of California.">
+            </div>
+        </footer>
+    </div>
+    <script src="california.js"></script> 
+    </script>
+    </body>
+</html>
